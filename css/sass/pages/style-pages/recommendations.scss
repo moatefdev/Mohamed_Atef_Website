@@ -1,0 +1,162 @@
+@import '../../layout/header';
+@import '../../layout/footer';
+@import '../../layout/navbar';
+@import '../../layout/grid';
+@import '../../helpers/classes';
+@import '../../helpers/varibales';
+
+// Intial Styal
+body {font-family: 'Roboto', sans-serif;}
+
+.container {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:  "head head head head"
+                        "shuffle shuffle shuffle shuffle"
+                        "use use use use"
+                        "courses courses courses courses"
+                        "books books books books"
+                        "inspectors inspectors inspectors inspectors"
+                        "foot foot foot foot";
+}
+
+h2.heading {
+  grid-area: head;
+  margin-left: 35px;
+  &::after {
+    width: $headLine + 230px;
+  }
+}
+
+@media (max-width: 768px) {
+  h2.heading {
+    &::after {
+      width: $headLine + 165px;
+    }
+  }
+}
+
+ul#shuffle-bar {
+  grid-area: shuffle;
+  display: flex;
+  font-size: 1.5em;
+  justify-content: center;
+  margin-top: 30px;
+  li {
+    margin-right: 10px;
+    border: 2px solid $mainColor;
+    padding: 5px 20px;
+  }
+}
+
+// Start What I Use
+section.what-i-use {
+  grid-area: use;
+  width: $sectionWidth;
+  margin: $sectionMargin;
+  h3 {
+    font-size: 1.7em;
+    margin: 25px auto;
+    &::after {
+      width: $headLine + 37px;
+    }
+  }
+  p {
+    font-size: 1.45em;
+  }
+  ul {
+    li {
+      list-style-type: square;
+      list-style-position: inside;
+      font-size: 1.3em;
+      padding: 10px 0;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+// End What I Use
+
+// Start Courses
+section.courses {
+  grid-area: courses;
+  width: $sectionWidth;
+  margin: $sectionMargin;
+  h3 {
+    font-size: 1.7em;
+    margin: 25px auto;
+    &::after {
+      width: $headLine
+    }
+  }
+  ul {
+    li {
+      list-style-type: square;
+      list-style-position: inside;
+      font-size: 1.3em;
+      padding: 10px 0;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+// End Courses
+
+// Start Books
+section.books {
+  grid-area: books;
+  width: $sectionWidth;
+  margin: $sectionMargin;
+  h3 {
+    font-size: 1.7em;
+    margin: 25px auto;
+    &::after {
+      width: $headLine - 25px;
+    }
+  }
+  ul {
+    li {
+      list-style-type: square;
+      list-style-position: inside;
+      font-size: 1.3em;
+      padding: 10px 0;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+// End Books
+
+// Start Inspectors
+section.inspectors {
+  grid-area: inspectors;
+  width: $sectionWidth;
+  margin: $sectionMargin;
+  h3 {
+    font-size: 1.7em;
+    margin: 25px auto;
+    &::after {
+      width: $headLine + 31px;
+    }
+  }
+  ul {
+    li {
+      list-style-type: square;
+      list-style-position: inside;
+      font-size: 1.3em;
+      padding: 10px 0;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+// End Inspectors
+
+
+// Start classes and placeholders
+.rec-active {
+  background-color: $mainColor;
+}

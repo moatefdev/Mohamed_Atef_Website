@@ -1,0 +1,55 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "nav nav nav nav"
+                        "head head head head"
+                        "about-home about-home about-home about-home"
+                        "portfolio-home portfolio-home portfolio-home portfolio-home"
+                        "blog-home blog-home blog-home blog-home"
+                        "recommend-home recommend-home recommend-home recommend-home"
+                        "contact contact contact contact"
+                        "foot foot foot foot";
+  grid-gap: 1px;
+}
+
+nav {
+  grid-area: nav
+}
+header {
+  grid-area: head
+}
+section#about-home {
+  grid-area: about-home
+}
+
+section#portfolio-home {
+  grid-area: portfolio-home;
+}
+
+section#blog-home {
+  grid-area: blog-home;
+}
+
+section#recommend-home {
+  grid-area: recommend-home;
+}
+
+section#contact {
+  grid-area: contact;
+}
+
+footer {
+  grid-area: foot;
+}
+
+.mob-navbar {
+  grid-area: mob-nav;
+}
+

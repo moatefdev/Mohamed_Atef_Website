@@ -1,0 +1,19 @@
+@import './varibales';
+
+.headsize {font-size: 2.5em;}
+
+.headline::after {
+  content: "";
+  width: $headLine;
+  display: block;
+  border: 2px solid royalblue;
+  margin-top: 2px;
+}
+
+.active-link {
+  border-top: 5px solid dodgerblue;
+}
+
+@media (max-width: 768px) {
+  .headsize {font-size: 2em;}
+}

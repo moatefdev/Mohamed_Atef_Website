@@ -1,0 +1,168 @@
+@import '../../layout/header';
+@import '../../layout/navbar';
+@import '../../components/headings';
+@import '../../helpers/classes';
+@import '../../helpers/varibales';
+@import '../../layout/grid';
+@import '../../layout/footer';
+
+// Intial Styal
+body {font-family: 'Roboto', sans-serif;}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:  "main-heading . . ." 
+                        "about-section about-section about-section about-section"
+                        "skills skills skills skills"
+                        "foot foot foot foot"
+}
+
+h2.heading {
+  grid-area: main-heading;
+  margin-left: 45px;
+  &::after {
+    width: $headLine + 3px;
+  }
+}
+
+@media (max-width: 768px) {
+  h2.heading {
+    &::after {
+      width: $headLine - 18px;
+    }
+  }
+}
+
+section#about-bio {
+  grid-area: about-section;
+  width: $sectionWidth;
+  margin: $sectionMargin;
+}
+
+footer {
+  grid-area: foot;
+}
+
+section p {
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+section figure img {
+  width: 270px;
+  height: 350px;
+}
+
+section#about-skills {
+  grid-area: skills;
+  width: $sectionWidth;
+  margin: $sectionMargin;
+  h3 {
+    font-size: 2em;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    &::after {
+      width: $headLine - 18px;
+    }
+  }
+  article {
+    div {
+      display: flex;
+      margin-bottom: 8px;
+      .progress {
+        margin-left: 15px;
+        border: 2px solid dodgerblue;
+        width: 75%;
+        border-radius: 15px;
+        span {
+          background-color: dodgerblue;
+          display: block;
+          padding: 5px;
+          border-radius: inherit;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          box-shadow: -2px 0px 0px 0px dodgerblue;
+          text-indent: 10px;
+          color: #fff;
+        }
+      }
+    }
+    div.jquery-icon {
+      img {
+        width: 28px;
+        height: 32px;
+        margin-left: 6px;
+        margin-right: 7px;
+      }
+    }
+  }
+  article {
+    margin-left: 10px;
+    p {
+      span {
+        font-size: .7em;
+        font-weight: bold;
+        color: #777;
+      }
+    }
+    .none-coding-skills {
+      img {
+        width: 50px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  article {
+    div:nth-of-type(3) {
+      .progress span{
+        width: 26% !important;
+      }
+    }
+    div:nth-of-type(6) {
+      .progress span{
+        width: 31% !important;
+      }
+    }
+    div:nth-of-type(7) {
+      .progress span{
+        width: 30% !important;
+      }
+    }
+    div:nth-of-type(9) {
+      .progress span{
+        width: 56% !important;
+      }
+    }
+    div:nth-of-type(10) {
+      .progress span{
+        width: 35% !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  h2 {margin-left: 15px;}
+
+  section#about-bio {
+    p {
+      margin-left: 15px;
+    }
+  }
+
+  section#about-skills {
+    article {
+      div {
+        .progress {
+          width: 83%;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+

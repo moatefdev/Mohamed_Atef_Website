@@ -1,0 +1,144 @@
+@import '../../layout/header';
+@import '../../layout/navbar';
+@import '../../layout/grid';
+@import '../../helpers/classes';
+@import '../../helpers/varibales';
+@import '../../layout/footer';
+
+// Intial Styal
+body {font-family: 'Roboto', sans-serif;}
+
+.container {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:  "head head head head"
+                        "ul-techs ul-techs ul-techs ul-techs"
+                        "work work work work"
+                        "foot foot foot foot";
+}
+
+nav {
+  grid-area: navbar;
+}
+
+h2.heading {
+  grid-area: head;
+  margin-left: 35px;
+  &::after {
+    width: $headLine + 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  h2.heading {
+    &::after {
+      width: $headLine + 22px;
+    }
+  }
+}
+
+ul.techniques {
+  grid-area: ul-techs;
+  width: $sectionWidth;
+  margin: $sectionMargin;
+}
+
+@media (max-width: 768px) {
+  ul.techniques {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+
+.portfolio-card {
+  grid-area: work;
+  width: $sectionWidth;
+  margin: $sectionMargin;
+}
+
+@media (max-width: 768px) {
+  .portfolio-card {
+    width: $sectionWidth !important;
+  }
+}
+
+footer {
+  grid-area: foot;
+}
+
+// Start Portfolio Card
+ul.techniques {
+  display: flex;
+  background-color: #282830;
+  margin-bottom: 10px;
+  li {
+    color: #fff;
+    margin-right: 3px;
+    padding: 15px 20px;
+  }
+}
+.portfolio-card {
+  display: flex;
+  figure {
+    margin: 0;
+    background-color: #1e90ff;
+    padding: 5px;
+    a {
+      text-decoration: none;
+      img {
+        width: 100%;
+        height: 300px;
+      }
+      figcaption {
+        border: 3px solid dodgerblue;
+        width: 100%;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        span {
+          margin-top: 8px;
+        }
+        span:first-child {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  figure:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+// Start Portfolio Media Queiry
+@media (max-width: 800px) {
+  ul.techniques {
+    li {
+      font-size: 1.3em !important;
+    }
+  }
+  .portfolio-card {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    figure {
+      margin-bottom: 20px;
+      a {
+        img {
+          width: 100%;
+        }
+      }
+    }
+    figure:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+}
+// End Portfolio Media Queiry
+// End Portfolio Card
+
+@media (max-width: 1000px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  h2 {
+    margin-left: 15px;
+  }
+}

@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(http-equiv="Content-Type", content="charset=UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+  title Blog Page
+  include ../includes/styles/styles.pug
+  link(rel="stylesheet", href="../../../css/sass/pages/style-pages/blog.css")
+  body
+    include ../includes/components/navbar.pug
+    .container
+      h2.heading.headsize.headline Blog
+      .posts-card
+        figure
+          img(src="../../../images/blog/Centerin_CSS.jpg", alt="")
+        .post-info
+          h3 How to center elements in CSS?
+          p Table of Contents Introduction Horizontally: Centering Inline Elements Horizontally: 
+            | Centering Block Elements Horizontally: Centering More Than Block Elements Vertically: 
+            | Centering Inline Element – Single Line Vertically: Centering Inline Element – Multiple lines Vertically: 
+            | Center Block Element With known Height Vertically: Center Block Elements with unknown Height Vertically: 
+            | Center Block Elements Using Flexbox Both Horizontal &amp; Vertically.
+          a(href="http://")
+            i(class= "fas fa-arrow-right fa-fw")
+            | Continue Reading
+      include ../includes/html_pages/footer.pug
+    script(src="../../../js/jquery-3.2.1.min.js")
+    script(src="../../../js/main-script.js")
+    script(src="../../../js/jquery.nicescroll.min.js")

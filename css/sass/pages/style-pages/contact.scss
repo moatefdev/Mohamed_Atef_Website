@@ -1,0 +1,64 @@
+@import '../../layout/header';
+@import '../../layout/footer';
+@import '../../layout/navbar';
+@import '../../layout/grid';
+@import '../../helpers/classes';
+@import '../../helpers/varibales';
+
+// Intial Styal
+body {font-family: 'Roboto', sans-serif;}
+
+.container {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:  "head head head head"
+                        "contact contact contact contact"
+                        "foot foot foot foot";
+}
+
+h2.heading {
+  grid-area: head;
+  margin-left: 35px;
+  &::after {
+    width: $headLine + 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  h2.heading {
+    &::after {
+      width: $headLine + 165px;
+    }
+  }
+}
+
+section.contact {
+  grid-area: contact;
+  width: $sectionWidth;
+  margin-left: 35px;
+  p {
+    font-size: 1.78em;
+  }
+  ul.contact-links {
+    display: flex;
+    justify-content: center;
+    li {
+      display: inline;
+      margin-right: 10px;
+      a {
+        background-color: $mainColor;
+        text-decoration: none;
+        color: #fff;
+        display: inline-flex;
+        justify-content: center;
+        padding: 20px;
+        border-radius: 4px;
+        &:hover {
+          background-color: #282830;
+        }
+        i {
+          font-size: 3em;
+        }
+      }
+    }
+  }
+}

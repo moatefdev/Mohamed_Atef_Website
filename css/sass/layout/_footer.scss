@@ -1,0 +1,151 @@
+// @import '../layout/grid';
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+h3 {
+  font-family: 'Roboto Slab', serif;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  p, ul li {
+    font-size: 1.4em !important;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+}
+
+footer {
+  background: #eee;
+  margin-top: 25px;
+  padding: 10px 23px;
+  border-top: 3px solid #282830;
+  .footer-logo {
+    h2 {
+      font-family: 'Roboto Slab', serif;
+      font-size: 2em;
+      text-shadow: 1px 3px 1px dodgerblue;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    p {
+      margin-top: 5px;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #777;
+      // font {
+      //   family: "Roboto", sans-serif;
+      //   size: 1.3em;
+      //   weight: bold;
+      // }
+    }
+  }
+  .footer-content {
+    display: flex;
+    .about-me {
+      width: 50%;
+      margin-right: 40px;
+      p {
+        color: #3c3c3c;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.3em;
+        line-height: 1.5;
+        text-align: justify;
+      }
+    }
+    .footer-links {
+      margin-right: 40px;
+      ul {
+        line-height: 2;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        a {
+          text-decoration: none;
+          color: #3c3c3c;
+          font-size: 18px;
+        }
+      }
+    }
+    .footer-contact-me {
+      a {
+        display: block;
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        background-color: #282830;
+        color: #fff;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+  }
+  .footer-copyright-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #777;
+    p {
+      font-family: "Roboto", sans-serif;
+      font-size: 1.3em;
+      margin: 0;
+      margin-top: 10px;
+      color: #3c3c3c;
+    }
+    ul {
+      display: inline-flex;
+      li {
+        margin: 10px 15px;
+        font-size: 25px;
+        a {
+          text-decoration: none;
+          color: #282830;
+        }
+      }
+    }
+  }
+}
+
+// Start Media Quiery
+@media (max-width: 1000px) {
+  footer {
+    margin-left: -10px;
+    .footer-logo {
+      h2, p {margin-left: 15px;}
+    }
+    .footer-content {
+      flex-direction: column;
+      margin-left: 15px;
+      .about-me {
+        width: 100%;
+      }
+    }
+    .footer-contact-me {
+      a {
+        margin-bottom: 20px;
+        padding: 20px !important;
+        text-align: center;
+        font-size: 1.5em !important;
+      }
+    }
+    .footer-copyright-social {
+      flex-direction: column;
+      p {
+        margin: 15px 0;
+      }
+      ul {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+// End Media Quiery

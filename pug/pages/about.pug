@@ -1,0 +1,77 @@
+doctype html
+html
+  head
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(http-equiv="Content-Type", content="charset=UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+  title About Page
+  include ../includes/styles/styles.pug
+  link(rel="stylesheet", href="../../../css/sass/pages/style-pages/about.css")
+  body
+    include ../includes/components/navbar.pug
+    .container
+      h2.heading.headsize.headline About
+      section#about-bio
+        p &#128075; Hi, I am Mohamed Atef, a front-end developer from Egypt. I love to learn and discover all things in web development, makes the web an awesome place and trying to share my experience on CodingTips (my blog), Dev community, Medium, Instagram and Twitter.
+        figure
+          img(src="../../../images/me3.jpg", alt="", srcset="")
+          //- figcaption Mohamed Atef
+        p So, How I get into tech? I actually graduated from the faculty of Law In Egypt which is not related to technology at all, but I always love to lean new things and develop my self. Naturally, tech was the perfect place to be and I`m super passionate about coding. I think that's enough to know about me, you can find at the rest of this page my skills and interests.
+      //- h2.heading.headsize.headline Skills
+      section#about-skills
+        h3.heading.headsize.headline Skills
+        article
+          div
+            i(class= "fab fa-html5 fa-2x fa-fw" style="color: #E54C21;")
+            div.progress
+              span(style="width: 95%;") HTML 95%
+          div
+            i(class= "fab fa-css3-alt fa-2x fa-fw" style="color: #0170BA;")
+            div.progress
+              span(style="width: 90%;") CSS 90%
+          div
+            i(class= "fab fa-js-square fa-2x fa-fw" style="color: #F99D34;")
+            div.progress
+              span(style="width: 20%;") JS 20%
+          div.jquery-icon
+            img(src="../../../images/icons/jquery.svg", alt="")
+            div.progress
+              span(style="width: 35%;") jQuery 35%
+          div
+            i(class= "fab fa-bootstrap fa-2x fa-fw" style="color: #543B79;")
+            div.progress
+              span(style="width: 90%;") Bootstrap 90%
+          div
+            i(class= "fab fa-sass fa-2x fa-fw" style="color: #CD6799;")
+            div.progress
+              span(style="width: 30%;") Sass 30%
+          div
+            i(class= "fab fa-php fa-2x fa-fw" style="color: #4D598F;")
+            div.progress
+              span(style="width: 15%;") PHP 10%
+          div
+            i(class= "fab fa-gulp fa-2x fa-fw" style="color: #DA4648;")
+            div.progress
+              span(style="width: 80%;") Gulp 80%
+          div
+            i(class= "fas fa-terminal fa-2x fa-fw" style="color: #A6CA4A;")
+            div.progress
+              span(style="width: 50%;") CMD ( Cmder ) 50%
+          div
+            i(class= "fab fa-github fa-2x fa-fw" style="color: #121011;")
+            div.progress
+              span(style="width: 20%;") Github 20%
+        article
+          p Some None coding skills 
+            span ( Just Basics )
+          .none-coding-skills
+            img(src="../../../images/icons/photoshop.svg", alt="")
+            img(src="../../../images/icons/xd.svg", alt="")
+            img(src="../../../images/icons/illustrator.svg", alt="")
+            img(src="../../../images/icons/pr.svg", alt="")
+            img(src="../../../images/icons/aftereffects.svg", alt="")
+            img(src="../../../images/icons/indesign.svg", alt="")
+      include ../includes/html_pages/footer.pug
+    script(src="../../../js/jquery-3.2.1.min.js")
+    script(src="../../../js/main-script.js")
+    script(src="../../../js/jquery.nicescroll.min.js")

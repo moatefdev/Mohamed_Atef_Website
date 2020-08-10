@@ -1,0 +1,98 @@
+doctype html
+html
+  head
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(http-equiv="Content-Type", content="charset=UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+  title Recommendations Page
+  include ../includes/styles/styles.pug
+  link(rel="stylesheet", href="../../../css/sass/pages/style-pages/recommendations.css")
+  body
+    include ../includes/components/navbar.pug
+    h2.heading.headsize.headline Recommendations
+      //- Start Recommendations Shuffle
+    .container
+      ul#shuffle-bar
+        li.rec-active
+          a All
+        li
+          a(data-class="uses") What I use
+        li
+          a(data-class="course") Courses
+        li
+          a(data-class="book") Books
+        li
+          a(data-class="inspector") Inspectors
+      //- End Recommendations Shuffle
+      //- Start What I use section
+      section#uses.what-i-use
+        h3.heading.headline What I Use
+        p Here's a list of all the tools I use.
+        ul
+          li
+            a(href="http://") 
+              abbr(title="Visual Studio") VS code 
+            | text editor for coding.
+          li
+            a(href="http://") Brackets.io 
+            | text editor for javascript.
+          li
+            a(href="http://") My Toshiba Satellite LapTop
+          li
+            a(href="http://") Cmder 
+            | as my prefered 
+            abbr(title="Command Line") CMD.
+          li
+            a(href="http://") Adobe XD 
+            | and 
+            a(href="http://") Adobe Photoshop 
+            | for web design.
+          li
+            a(href="http://") Carbon 
+            | for creating beautiful image for my source code.
+          li
+            a(href="http://") ResponsivelyApp 
+            | for developing responsive web templates.
+          li
+            a(href="http://") Polacode  
+            | for Code Snippets.
+          li
+            a(href="http://") WPS Office 
+            | for writing PDFs and text files.
+      //- End What I use section
+      //- Start Courses
+      section#course.courses
+        h3.heading.headline Courses
+        ul
+          li
+            a(href="https://www.youtube.com/channel/UCSNkfKl4cU-55Nm-ovsvOHQ") Elzero Web School 
+            | on youtube (Ar).
+      //- End Coursses
+      //- Start Books
+      section#book.books
+        h3.heading.headline Books
+        ul
+          li
+            a(href="https://www.youtube.com/channel/UCSNkfKl4cU-55Nm-ovsvOHQ") HTML and CSS 
+            | design and build websites for Jon Duckett.
+          li
+            a(href="https://www.youtube.com/channel/UCSNkfKl4cU-55Nm-ovsvOHQ") Css Secrets 
+            | for Lue.
+      //- End Books
+      //- Start Inspectors
+      section#inspector.inspectors
+        h3.heading.headline Inspectors
+        ul
+          li
+            a(href="https://sa.linkedin.com/in/osamaelzero") Osama Mohamed
+          li
+            a(href="https://www.sarasoueidan.com/") Sara Soueidan
+          li
+            a(href="https://emmawedekind.com/") Emma Wediekind
+          li
+            a(href="https://www.samanthaming.com/") Samantha
+      //- End Inspectors
+    include ../includes/html_pages/footer.pug
+    script(src="../../../js/jquery-3.2.1.min.js")
+    script(src="../../../js/main-script.js")
+    script(src="../../../js/jquery.nicescroll.min.js")

@@ -1,0 +1,402 @@
+@import '../../layout/header';
+@import '../../layout/footer';
+@import '../../layout/navbar';
+@import '../../layout/grid';
+@import '../../helpers/classes';
+@import '../../helpers/varibales';
+
+// Intial Styal
+body {font-family: 'Roboto', sans-serif;}
+
+// Start About section in Homepage
+section#about-home {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid $mainColor;
+  box-shadow: 5px 6px 0px 0 $mainColor;
+  width: $sectionWidth;
+  margin: $sectionMargin;
+  padding: 15px;
+  border-radius: 3px;
+  #about-img-desc {
+    width: 40%;
+    height: 300px;
+    display: flex;
+    margin-right: 15px;
+    figure {
+      margin: 0;
+      figcaption {
+        display: none;
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 0px;
+    }
+  }
+  #about-home-back {
+    display: flex;
+    transform: rotateY(0deg);
+    p {
+      align-self: center;
+      font-family: 'Roboto', sans-serif;
+      font-size: 27px;
+      line-height: 1.3;
+      span {
+        color: blue;
+      }
+      a {text-decoration: none;}
+    }
+    a.about-bio-back {
+      display: none;
+    }
+  }
+}
+
+// Start Media quere of About section in Homepage
+@media (max-width: 576px) {
+  section#about-home {
+    flex-direction: column;
+    position: relative;
+    height: 475px;
+    #about-img-desc {
+      width: 100%;
+      height: 500px;
+      position: absolute;
+      backface-visibility: hidden;
+      z-index: 2;
+      transition: all 1s ease-in-out;
+      figure {
+        margin: 0;
+        img {
+          height: 85%;
+        }
+        figcaption {
+          display: block;
+          font-family: 'Roboto', sans-serif;
+          background-color: #000;
+          color: #fff;
+          padding: 15px;
+          margin-top: -4px;
+        }
+      }
+    }
+    #about-home-back {
+      position: absolute;
+      height: 435px;
+      background-color: #fff;
+      z-index: 1;
+      transform: rotateY(180deg);
+      transition: all 1s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      p {
+        display: block;
+        line-height: 1.5;
+        padding: 30px;
+      }
+      a.about-bio-back {
+        display: flex;
+        align-self: center;
+        color: #777;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5em;
+        border: 3px solid #777;
+        border-radius: 30px;
+        padding: 20px 40px;
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  section#about-home {
+    padding: 0;
+    #about-home-back {
+      padding: 15px;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  section#about-home {
+    #about-img-desc {
+      width: 150%;
+    }
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1120px) {
+  section#about-home {
+    #about-home-back p {
+      width: 540px;
+    }
+  }
+}
+// End Media quere of About section in Homepage
+// End About section in Homepage
+
+// Start Portfolio and Blog section in Homepage
+section#portfolio-home,
+section#blog-home {
+  width: $sectionWidth;
+  margin: $sectionMargin;
+  h2.headline {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    &::after {
+      width: $headLine + 63px
+    }
+  }
+  article {
+    .work-title {
+      width: 100%;
+      p {
+        color: #777;
+      }
+    }
+    .work-desc {
+      display: flex;
+      .work-img {
+        width: 80%;
+        figure {
+          margin: 0;
+          width: 100%;
+          img {
+            width: 49%;
+            height: 270px;
+          }
+          img:not(:last-child) {
+            margin-right: 1%;
+          }
+        }
+      }
+      .work-btn {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          width: 70px;
+          height: 70px;
+          border: 3px solid #000;
+          border-radius: 50%;
+          color: #000;
+          background-color: #fff;
+          box-shadow: 1px 1px #eee;
+          text-align: center;
+          line-height: 83px;
+        }
+      }
+    }
+  }
+}
+// Start media quiery of Portfolio section in Homepage
+@media (max-width: 800px) {
+  section#portfolio-home,
+  section#blog-home {
+    h2.headline {
+      &::after {
+        width: $headLine + 28px;
+      }
+    }
+    article {
+      .work-desc {
+        flex-direction: column;
+        .work-img {
+          width: 100%;
+          figure {
+            margin: 0px;
+            img {
+              width: 100%;
+              margin-bottom: 5px;
+              box-shadow: 0 5px 8px 0px #c3c3c3;
+              &:not(:last-child) {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+        .work-btn {
+          width: 100%;
+          margin-top: 15px;
+          margin-bottom: 30px;
+          a {
+            width: 97%;
+            border: 0;
+            border-radius: 10px;
+            color: #fff;
+            background-color: #4169e1;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 630px) and (max-width: 800px) {
+  section#portfolio-home, 
+  section#blog-home {
+      article {
+        .work-desc {
+          .work-img {
+            figure {
+              display: flex;
+              img {
+                width: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+// End media quiery of Portfolio and Blog section in Homepage
+// End Portfolio and Blog section in Homepage
+
+// Start Blog section in Homepage
+section#blog-home {
+  h2.headline {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    &::after {
+      width: $headLine - 20px
+    }
+  }
+}
+
+// Start media quiery of Blog section in Homepage
+@media (max-width: 800px) {
+  section#blog-home {
+    h2.headline {
+      font-family: 'Rubik', sans-serif;
+      font-weight: 500;
+      &::after {
+        width: $headLine - 35px
+      }
+    }
+  }
+}
+// End media quiery of Blog section in Homepage
+// End Blog section in Homepage
+
+// Start Recommendations section
+section#recommend-home {
+  width: $sectionWidth;
+  margin: $sectionMargin;
+  h2.headline {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    &::after {
+      width: $headLine + 258px
+    }
+  }
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6em;
+    line-height: 1.4;
+    span {
+      font-weight: bold;
+      &:last-child {
+        color: blue;
+      }
+      a {text-decoration: none;}
+    }
+  }
+}
+// Start Media Quiery of Recommendations section
+@media (max-width: 800px) {
+  section#recommend-home {
+    h2.headline {
+      &::after {
+        width: $headLine + 185px
+      }
+    }
+    p {
+      margin-left: 15px;
+      font: {
+        size: 1.7em;
+        style: italic;
+      }
+    }
+  }
+}
+// End  Media Quiery of Recommendations section
+// End Recommendations section
+
+// Start Contact section
+section#contact {
+  width: $sectionWidth + 10%;
+  margin: $sectionMargin;
+  background-color: #282830;
+  padding: 10px 10px 33px 23px;
+  h2.headline {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 0;
+    margin-left: 50px;
+    &::after {
+      width: $headLine + 53px
+    }
+  }
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 93%;
+    margin-left: 50px;
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.4em;
+      color: #fff;
+    }
+    a {
+      text-decoration: none;
+      background-color: #282830;
+      color: #fff;
+      border: 3px solid #fff;
+      border-radius: 15px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.5em;
+      padding: 20px 40px;
+    }
+  }
+}
+// Start Media Quiery of Contact section
+@media (max-width: 800px) {
+  section#contact {
+    h2.headline {
+      margin-left: unset;
+      &::after {
+        width: $headLine + 23px
+      }
+    }
+    .contact-info {
+      flex-direction: column;
+      margin-left: unset;
+      p {
+        margin: 20px;
+        margin-left: unset;
+        line-height: 1.5;
+      }
+      a {
+        font-size: 1.8em;
+      }
+    }
+  }
+}
+// End Media Quiery of Contact section
+// End Contact section
+
+@media (max-width: 1000px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

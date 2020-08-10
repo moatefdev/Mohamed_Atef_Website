@@ -1,0 +1,74 @@
+doctype html
+html
+  head
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(http-equiv="Content-Type", content="charset=UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+  title Home Page
+  include ../includes/styles/styles.pug
+  link(rel="stylesheet", href="../../../css/sass/pages/style-pages/homepage.css")
+  body
+    .container
+      include ../includes/html_pages/header.pug
+      include ../includes/components/navbar.pug
+      section#about-home
+        #about-img-desc
+          figure
+            img(src="../../../images/me3.JPG", alt="", srcset="")
+            figcaption Tab on my image 👆 to see a bio about me.
+        #about-home-back
+          p I am a
+            span  front-end 
+            | developer who makes the web an awesome place and trying to share my experience. 
+            | If you want to know more about me and my skills visit the 
+            span 
+              a(href="about.html") About 
+            | page.
+          a(href="#" id="about-bio-go-back" class="about-bio-back")
+            i(class="fa fa-chevron-circle-left")
+            | Back
+      section#portfolio-home
+        h2.headsize.headline Portfolio
+        article
+          .work-desc
+            .work-img
+              figure
+                img(src="../../../images/Portfolio/facebook-design.png", alt="")
+                img(src="../../../images/Portfolio/aasha.jpg", alt="")
+            .work-btn
+              a(href="portfolio.html")
+                <i class="fas fa-arrow-right fa-2x"></i>
+      section#blog-home
+        h2.headsize.headline Blog
+        article
+          .work-desc
+            .work-img
+              figure
+                img(src="../../../images/blog/Centerin_CSS.jpg", alt="")
+                img(src="../../../images/blog/css-grid.png", alt="")
+            .work-btn
+              a(href="blog.html")
+                <i class="fas fa-arrow-right fa-2x"></i>
+      section#recommend-home
+        h2.headsize.headline Recommendations
+        p Do you want to know what 
+          span course, Inspectors, technical books 
+          | I recommend? 
+          | and 
+          span what I use 
+          | (e.g tools, my laptop or softwares)? 
+          | Visit the 
+          span 
+            a(href="recommendations.html") Recommendations 
+          | page.
+      section#contact
+        .contact-home
+          h2.headsize.headline Contact
+          .contact-info
+            p Do you want to get in touch? Click on the right button.
+            a(href="contact.html") Contact Me
+      include ../includes/html_pages/footer.pug
+      script(src="../../../js/jquery-3.2.1.min.js")
+      script(src="../../../js/main-script.js")
+      script(src="../../../js/jquery.nicescroll.min.js")
+      script(src="../../../js/homepage.js")
