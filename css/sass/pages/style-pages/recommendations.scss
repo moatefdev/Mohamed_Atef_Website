@@ -48,6 +48,18 @@ ul#shuffle-bar {
   }
 }
 
+// Start Media Query of Shuffle-bar
+@media (max-width: 800px) {
+  ul#shuffle-bar {
+    flex-direction: column;
+    li {
+      margin: 0 15px 7px 15px;
+      font-size: 1.1em !important; // Not working because of the footer, so it needs a solution
+    }
+  }
+}
+// End Media Query of Shuffle-bar
+
 // Start What I Use
 section.what-i-use {
   grid-area: use;

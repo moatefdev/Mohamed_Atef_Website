@@ -451,6 +451,19 @@ ul#shuffle-bar li {
   padding: 5px 20px;
 }
 
+@media (max-width: 800px) {
+  ul#shuffle-bar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  ul#shuffle-bar li {
+    margin: 0 15px 7px 15px;
+    font-size: 1.1em !important;
+  }
+}
+
 section.what-i-use {
   -ms-grid-row: 3;
   -ms-grid-column: 1;

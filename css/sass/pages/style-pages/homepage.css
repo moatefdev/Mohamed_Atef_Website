@@ -483,6 +483,7 @@ section#about-home #about-home-back a.about-bio-back {
             flex-direction: column;
     position: relative;
     height: 475px;
+    padding: 0;
   }
   section#about-home #about-img-desc {
     width: 100%;
@@ -549,6 +550,12 @@ section#about-home #about-home-back a.about-bio-back {
   }
   section#about-home #about-home-back a.about-bio-back i {
     margin-right: 5px;
+  }
+}
+
+@media (max-width: 375px) {
+  section#about-home figure img {
+    height: 81% !important;
   }
 }
 
