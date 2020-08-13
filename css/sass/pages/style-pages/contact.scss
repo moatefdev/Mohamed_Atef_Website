@@ -26,7 +26,7 @@ h2.heading {
 @media (max-width: 768px) {
   h2.heading {
     &::after {
-      width: $headLine + 165px;
+      width: $headLine + 8px;
     }
   }
 }
@@ -57,6 +57,23 @@ section.contact {
         }
         i {
           font-size: 3em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  section.contact{
+    p {
+      margin-right: 1px;
+    }
+    ul.contact-links {
+      flex-wrap: wrap;
+      justify-content: start;
+      li {
+        a {
+          margin-bottom: 10px;
         }
       }
     }

@@ -426,7 +426,7 @@ h2.heading::after {
 
 @media (max-width: 768px) {
   h2.heading::after {
-    width: 265px;
+    width: 108px;
   }
 }
 
@@ -477,5 +477,21 @@ section.contact ul.contact-links li a:hover {
 
 section.contact ul.contact-links li a i {
   font-size: 3em;
+}
+
+@media (max-width: 576px) {
+  section.contact p {
+    margin-right: 1px;
+  }
+  section.contact ul.contact-links {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  section.contact ul.contact-links li a {
+    margin-bottom: 10px;
+  }
 }
 /*# sourceMappingURL=contact.css.map */
