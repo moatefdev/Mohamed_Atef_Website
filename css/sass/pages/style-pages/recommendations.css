@@ -451,6 +451,11 @@ ul#shuffle-bar li {
   padding: 5px 20px;
 }
 
+ul#shuffle-bar li:hover {
+  background-color: #4169e1;
+  color: #fff;
+}
+
 @media (max-width: 800px) {
   ul#shuffle-bar {
     -webkit-box-orient: vertical;
@@ -586,5 +591,6 @@ section.inspectors ul li a {
 
 .rec-active {
   background-color: #4169e1;
+  color: #fff;
 }
 /*# sourceMappingURL=recommendations.css.map */

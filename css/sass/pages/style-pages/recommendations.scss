@@ -45,6 +45,10 @@ ul#shuffle-bar {
     margin-right: 10px;
     border: 2px solid $mainColor;
     padding: 5px 20px;
+    &:hover {
+      background-color: $mainColor;
+      color: #fff;
+    }
   }
 }
 
@@ -171,4 +175,5 @@ section.inspectors {
 // Start classes and placeholders
 .rec-active {
   background-color: $mainColor;
+  color: #fff;
 }

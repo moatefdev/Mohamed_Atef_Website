@@ -426,11 +426,14 @@ h2.heading::after {
   width: 76px;
 }
 
-.posts-card {
+.posts {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: posts;
+}
+
+.posts .post-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,21 +443,21 @@ h2.heading::after {
   margin: 10px auto;
 }
 
-.posts-card figure {
+.posts .post-card figure {
   margin: 0;
   margin-right: 20px;
 }
 
-.posts-card figure img {
+.posts .post-card figure img {
   width: 100%;
   height: 100%;
 }
 
-.posts-card .post-info h3 {
+.posts .post-card .post-info h3 {
   padding-top: 20px;
 }
 
-.posts-card .post-info p {
+.posts .post-card .post-info p {
   font-size: 1.1em;
   color: #777;
   width: 97%;
@@ -462,7 +465,7 @@ h2.heading::after {
   line-height: 1.6;
 }
 
-.posts-card .post-info a {
+.posts .post-card .post-info a {
   text-decoration: none;
   color: royalblue;
   display: block;
@@ -470,7 +473,7 @@ h2.heading::after {
   font-weight: bold;
 }
 
-.posts-card .post-info a i {
+.posts .post-card .post-info a i {
   margin-right: 8px;
   color: #fff;
   background-color: royalblue;
@@ -483,19 +486,19 @@ h2.heading::after {
   h2.heading::after {
     width: 60px;
   }
-  .posts-card {
+  .post-card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .posts-card figure {
-    margin: 0;
+  .post-card figure {
+    margin: 0 !important;
   }
-  .posts-card .post-info {
+  .post-card .post-info {
     padding: 0 10px;
   }
-  .posts-card .post-info p {
+  .post-card .post-info p {
     font-size: 1.3em !important;
     line-height: 1.4;
     text-align: left;
