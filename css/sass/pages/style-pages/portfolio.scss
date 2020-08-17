@@ -53,6 +53,7 @@ ul.techniques {
   grid-area: work;
   width: $sectionWidth;
   margin: $sectionMargin;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
@@ -79,9 +80,10 @@ ul.techniques {
 .portfolio-card {
   display: flex;
   figure {
-    margin: 0;
+    margin: 10px 6px;
     background-color: #1e90ff;
     padding: 5px;
+    width: 49%;
     a {
       text-decoration: none;
       img {
@@ -103,9 +105,6 @@ ul.techniques {
       }
     }
   }
-  figure:not(:last-child) {
-    margin-right: 10px;
-  }
 }
 // Start Portfolio Media Queiry
 @media (max-width: 800px) {
@@ -120,6 +119,7 @@ ul.techniques {
     text-align: center;
     figure {
       margin-bottom: 20px;
+      width: 100%;
       a {
         img {
           width: 100%;

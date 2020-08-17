@@ -459,6 +459,8 @@ ul.techniques {
   grid-area: work;
   width: 90%;
   margin: 10px auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
@@ -495,9 +497,10 @@ ul.techniques li {
 }
 
 .portfolio-card figure {
-  margin: 0;
+  margin: 10px 6px;
   background-color: #1e90ff;
   padding: 5px;
+  width: 49%;
 }
 
 .portfolio-card figure a {
@@ -530,10 +533,6 @@ ul.techniques li {
   font-weight: bold;
 }
 
-.portfolio-card figure:not(:last-child) {
-  margin-right: 10px;
-}
-
 @media (max-width: 800px) {
   ul.techniques li {
     font-size: 1.3em !important;
@@ -548,6 +547,7 @@ ul.techniques li {
   }
   .portfolio-card figure {
     margin-bottom: 20px;
+    width: 100%;
   }
   .portfolio-card figure a img {
     width: 100%;
