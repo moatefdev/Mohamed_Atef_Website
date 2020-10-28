@@ -536,6 +536,7 @@ ul.techniques li {
 @media (max-width: 800px) {
   ul.techniques li {
     font-size: 1.3em !important;
+    cursor: pointer;
   }
   .portfolio-card {
     -webkit-box-orient: vertical;

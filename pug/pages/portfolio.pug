@@ -11,30 +11,37 @@ html
     include ../includes/components/navbar.pug
     .container
       h2.heading.headsize.headline Portfolio
-      ul.techniques
+      ul#techs.techniques
         li.active-link All
         li HTML &amp; CSS
         li JavaScript
       .portfolio-card
         figure(data-tech="htmlandcss")
-          a(href="http://")
+          a(href="../../My-Projects/Facebook/index.html", target="_blank")
             img(src="images/Portfolio/facebook-design.png", alt="")
             figcaption Facebook Homepage - 2019 
               span Technology: 
               span HTML, CSS
         figure(data-tech="htmlandcss")
-          a(href="http://")
+          a(href="../../My-Projects/AASHA/index.html", target="_blank")
             img(src="images/Portfolio/aasha.jpg", alt="")
             figcaption AASHA Design - 2019 
               span Technology: 
               span HTML, CSS
         figure(data-tech="htmlandcss")
-          a(href="http://")
+          a(href="../../../Unique Coderz Academy/Template One/Template_One/index.html", target="_blank")
             img(src="images/Portfolio/template-one.png", alt="")
             figcaption Template One - 2019 
               span Technology: 
               span HTML, CSS, Sass (Scss)
+        figure(data-tech="htmlandcss" data-js="js")
+          a(href="../../GKA/Website/Genius_Kids_Academy/index.html", target="_blank")
+            img(src="images/Portfolio/gkacademy.png", alt="")
+            figcaption Geniuses Academy
+              span Technology: 
+              span HTML, CSS, Sass (Scss), Pug.js &amp; Bootstrap
       include ../includes/html_pages/footer.pug
     script(src="js/jquery-3.2.1.min.js")
+    script(src="js/portfolio.js")
     script(src="js/main-script.js")
     script(src="js/jquery.nicescroll.min.js")

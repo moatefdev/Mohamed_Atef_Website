@@ -17,14 +17,18 @@ $(document).ready(function () {
         'position': 'fixed',
         'top': '0px',
         'left': '50%',
-        'transform': 'translate(-50%, 10px)'
+        'transform': 'translate(-50%, 10px)',
+        'border-radius': '10px',
+        'box-shadow': 'rgb(65 105 225) 1px 3px 12px 0px'
       })
     } else {
       $('#shuffle-bar').css({
         'position': 'static',
         'top': 'auto',
         'left': 'auto',
-        'transform': 'translate(0px, 0px)'
+        'transform': 'translate(0px, 0px)',
+        'border-radius': '0px',
+        'box-shadow': 'none'
       })
     }
   })
