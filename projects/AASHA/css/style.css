@@ -1,0 +1,97 @@
+/* Start Upper Section */
+
+.upper-section {
+  background-color: #eee
+}
+
+.upper-sec {
+  padding: 100px 0
+}
+
+.upper-section .upper-sec .upper-desc {
+  margin-bottom: 35px
+}
+
+.upper-section .upper-sec ul {
+  padding: 0
+}
+
+.upper-section .upper-sec ul li {
+
+  line-height: 2.5;
+}
+
+.upper-section .upper-sec ul li i {
+  margin-right: 20px;
+  color: #ff3b49;
+}
+
+/* End Upper Section */
+
+/* Start Lower Section */
+
+.lower-section {
+  background-color: #ff3b49;
+  color: #FFF
+}
+
+.lower-sec {
+  padding: 100px 0
+}
+
+.lower-section .foot-info {
+  margin-top: 30px
+}
+
+.lower-section .about-us {
+  margin-top: 60px
+}
+
+.lower-section .feet-links {
+
+}
+
+.lower-section .social ul li {
+  display: inline-block;
+  margin: 165px 35px 0 20px
+}
+
+.lower-section .foot-links ul li {
+  display: inline-block;
+  width: 186px;
+  margin: 0 auto;
+}
+
+/* End Lower Section */
+
+
+/* Start Form Section */
+
+.form {
+  background-color: #FFF;
+  padding: 30px;
+  border-radius: 3px;
+  position: absolute;
+  z-index: 1;
+  top: 27%;
+  left: 60%;
+  box-shadow: 0px 0px 20px 0px #000
+}
+
+form input {
+  display: block;
+}
+
+form input[type="text"],
+form .ta {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ff3b49
+}
+
+form input[type="submit"] {
+  background-color: #ff3b49;
+  color: #FFF
+}
+
+/* End Form Section */

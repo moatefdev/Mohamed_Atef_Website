@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Facebook</title>
+	<link rel="stylesheet" href="style.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+</head>
+<body>
+
+	<!-- Start header -->
+	<header>
+		<div class="container">
+			<div class="row">
+				<a href="https://www.facebook.com/" target="_blank"><h1 class="font">facebook</h1></a>
+				<table>
+					<tbody>
+						<tr>
+							<td class="form-label font" required>Email or Phone</td>
+							<td class="form-label font" required>Password</td>
+						</tr>
+						<tr>
+							<td class="form-input"><input type="Email" name="Email" required></td>
+							<td class="form-input"><input type="Password" name="Password" required></td>
+							<td class="btn font"><button>Log In</button></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td class="forget-pass font"><a href="https://www.facebook.com/recover/initiate?lwv=111">Forgotten account?</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</header>
+	<!-- End header -->
+
+	<!-- Start the main content section of the page -->
+	<section>
+		<div class="container">
+			<div class="row">
+				<p class="font">Recent logins</p>
+				<span class="font c-s">Click your picture or add an account.</span>
+				<div class="logins">
+					<span class="remove font">×</span>
+					<img src="images/elzero.jpg">
+					<span class="notify">10</span>
+					<a href="" class="font">Osama</a>
+				</div>
+				<div class="logins">
+					<span class="remove font">×</span>
+					<img src="images/my-img-login.jpg">
+					<span class="notify">7</span>
+					<a href="" class="font">Mohammed</a>
+				</div>
+				<div class="logins">
+					<a href="https://www.facebook.com/login/" class="custome-icon"><i class="fas fa-plus-circle fa-3x"></i></a>
+					<a href="https://www.facebook.com/login/" class="font add-acc">Add account</a>
+				</div>
+			</div>
+			<div class="row custome-style">
+				<p class="font custome-style">Create a new account</p>
+				<span class="font">It's free and always will be.</span>
+				<form>
+					<input type="text" name="username" placeholder="First name">
+					<input type="text" name="surname" placeholder="Surname">
+					<input type="text" name="email" placeholder="Mobile number or email address">
+					<input type="Password" name="password" placeholder="New password">
+					<label class="font birthday">Birthday</label>
+					<select id="selDay" class="sel"></select>
+					<select id="selMonth" class="sel"></select>
+					<select id="selYear" class="sel"></select>
+					<a href="#" id="birthdayQues" class="font">Why do I need to provide my date of birth?</a>
+					<input class="radio-input font" type="radio" name="sex">
+					<label class="font radio-label">Female</label>
+					<input class="radio-input font" type="radio" name="sex">
+					<label class="font radio-label">Male</label>
+					<p class="notes-about-policy font">By clicking Create Account, you agree to our Terms and confirm that you have read our Data Policy, including our Cookie Use Policy. You may receive SMS message notifications from Facebook and can opt out at any time.</p>
+					<button type="submit">Create Account</button>
+				</form>
+				<p class="page font"><a href="https://www.facebook.com/pages/create/?ref_type=registration_form">Create a Page</a> for a celebrity, band or business.</p>
+			</div>
+		</div>	
+	</section>
+	<!-- End the main content section of the page -->
+
+
+	<!-- Start Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<ul class="font">
+					<li><a href="#">English (UK)</a></li>
+					<li><a href="#">العربية</a></li>
+					<li><a href="#">Français (France)</a></li>
+					<li><a href="#">Italiano</a></li>
+					<li><a href="#">Deutsch</a></li>
+					<li><a href="#">Русский</a></li>
+					<li><a href="#">Español</a></li>
+					<li><a href="#">Bahasa Indonesia</a></li>
+					<li><a href="#">Türkçe</a></li>
+					<li><a href="#">Portuguese (Brazil)</a></li>
+					<li><a href="#">हिन्दी</a></li>
+					<li><a href="#"><i class="fas fa-plus"></i></a></li>
+				</ul>
+				<table class="footer-links font">
+					<tr>
+						<td>Sign Up</td>
+						<td>Log In</td>
+						<td>messenger</td>
+						<td>Facebook Lite</td>
+						<td>Mobile</td>
+						<td>Find Friends</td>
+						<td>People</td>
+						<td>Pages</td>
+						<td>Places</td>
+						<td>Games</td>
+						<td>Locations</td>
+						<td>Celebrties</td>
+						<td>Marketplace</td>
+						<td>Groups</td>
+						<td>Recipes</td>
+					</tr>
+					<tr>
+						<td>Sports</td>
+						<td>Look</td>
+						<td>Moments</td>
+						<td>Instagram</td>
+						<td>Local</td>
+						<td>About</td>
+						<td>Create ad</td>
+						<td>Create Page</td>
+						<td>Developers</td>
+						<td>Careers</td>
+						<td>Privacy</td>
+						<td>Cookies</td>
+						<td>AdChoices <span class="dollar-icon">$</span></td>
+						<td>Terms</td>
+						<td>Help</td>
+					</tr>
+				</table>
+				<span class="copy-right font">Facebook &copy; 2018</span>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<script src="logic.js"></script>
+</body>
+</html>

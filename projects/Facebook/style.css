@@ -1,0 +1,309 @@
+body {margin: 0}
+
+/* Start Header */
+
+header {
+	height: 82px;
+	width: 100%;
+	background-color: #3B5998;
+}
+
+header h1 {
+	color: #FFF;
+	display: inline-block;
+	font-size: 40px;
+	float: left;
+	font-weight: bold;
+	margin-top: 24px;
+	margin-bottom: 0;
+	cursor: pointer
+}
+
+header table {
+	float: right;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-size: 12px
+}
+
+header table .form-label {color: #fff}
+
+header table .form-input input {border:1px solid #1d2a5b;width: 142px;padding: 3px}
+
+header table .btn button {
+	border: 1px solid #29487d;
+	background-color: #4267b2;
+	color: #fff;
+	border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    line-height: 18px;
+    padding: 3px 6px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+header table .btn button:hover {background-color: #365899}
+
+header table .forget-pass a {text-decoration: none; color: #9cb4d8}
+
+/* End Header */
+
+
+/* Start Section */
+
+section {width:100%;background-color: #e9ebee;overflow: hidden;}
+
+section p {
+	display: inline-block;
+	font-size: 36px;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	color: #333
+}
+
+section span.c-s {
+	display: block;
+	color: #333;
+	font-size: 20px;
+}
+
+section .logins {
+	height: 205px;
+	width: 160px;
+	background-color: #fff;
+	margin-top: 25px;
+	margin-right: 17px;
+	text-align: center;
+	border-radius: 4px;
+	float: left;
+	position: relative
+}
+
+section .logins img {
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	width: 100%;
+	cursor: pointer
+}
+
+section .logins span.notify {
+	width: 10%;
+	color: #fff;
+	background-color: #fa3e3e;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 999;
+	top: -8px;
+	right: -4px;
+	padding: 4px;
+	-webkit-box-shadow: -1px 1px 2px 0 rgba(0, 0, 0, .3);
+	-moz-box-shadow: -1px 1px 2px 0 rgba(0, 0, 0, .3);
+	-o-box-shadow: -1px 1px 2px 0 rgba(0, 0, 0, .3);
+	box-shadow: -1px 1px 2px 0 rgba(0, 0, 0, .3)
+}
+
+section .logins span.remove {
+	width: 8%;
+    height: 8%;
+    line-height: 0.8;
+	color: gray;
+	font-size: 20px;
+	font-weight: bold;
+	border: 1px solid gray;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 999;
+	top: 5;
+	left: 3px;
+	padding: 4px;
+}
+
+section .logins span.remove:hover {
+	background-color: white;
+	border: none;
+	-webkit-transform: scale(1.5,1.5);
+	-moz-transform: scale(1.5,1.5);
+	-o-transform: scale(1.5,1.5);
+	transform: scale(1.5,1.5)
+}
+
+section .logins a {
+	text-decoration: none;
+	font-size: 18px;
+	display: inline-block;
+	line-height: 3;
+	overflow: hidden;
+	color: #365899
+}
+
+section .logins a.custome-icon {display: block;margin-top: 50%}
+
+section .logins a.add-acc {margin-top: 17px}
+
+section .custome-style p {position: absolute;top: -105px;right: 45px}
+
+section .custome-style span {font-size:20px;position: absolute;top: -21px;right: 173px;}
+
+section .custome-style form {padding-top: 25px;position: relative;right: -88px}
+
+section .custome-style form input[type="text"],[name="password"] {
+	width: 195px;
+	font-size: 18px;
+	padding: 8px 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #bdc7d8;
+	border-radius: 5px;
+	cursor: text
+}
+
+section .custome-style form input[name="email"] {display: block;width: 425px}
+
+section .custome-style form input[name="password"] {display: block;width: 425px}
+
+section .custome-style form label.birthday {display: block;
+	color: #1d2129;
+	font-size: 18px;
+	padding-top: 20px;
+	padding-bottom: 7px;
+}
+
+section .custome-style form select {
+    height: 30px;
+    padding: 5px;
+    font-size: 13px;
+    border: 1px solid #bdc7d8
+}
+
+section .custome-style form a {color: #365899;text-decoration: none;word-wrap: break-word;font-size: 13px;margin-left: 10px}
+
+section .custome-style form .radio-input {
+	color: #1d2129;
+	position: relative;
+	right: -524px;
+	margin-top: 15px;
+	margin-right: 5px;
+	margin-left: 15px
+}
+
+section .custome-style form .radio-label {
+	font-size: 18px;
+	line-height: 3;
+	position: relative;
+	top: 3px;
+    right: -520px;
+}
+
+section .custome-style form .notes-about-policy {
+	width: 340px;
+	color: #777;
+	display: block;
+	font-size: 12px;
+	position: relative;
+	top: -25px;
+	right: -535px;
+	line-height: 1.3
+}
+
+section .custome-style form button {
+	min-width: 194px;
+	color: #fff;
+	background:linear-gradient(#67ae55, #578843);
+	background-color: #69a74e;
+	box-shadow:inset 0 1px 1px #a4e388;
+	border-width: 1px;
+	border-style: solid;
+	border-color:#3b6e22 #3b6e22 #2c5115;
+	font-size: 19px;
+	font-weight: bold;
+	padding: 7px 20px;
+	margin-top: -15px;
+	border-radius: 5px;
+	display: inline-block;
+	position: relative;
+	right: -535px;
+	cursor: pointer;
+	text-shadow: 0 1px 2px rgba(0,0,0,.5)
+}
+
+section .custome-style form button:hover {background:linear-gradient(#79bc64, #578843)}
+
+section .custome-style p.page {
+	position: relative;
+	top: 15px;
+    right: -625px;
+	border-top: 1px solid #dddfe2;
+    color: #666;
+    font-size: 13px;
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-bottom: 55px
+}
+
+section .custome-style p.page a {text-decoration: none;color: #365899}
+
+/* End Section */
+
+/* Start Footer */
+
+footer ul {
+	list-style: none;
+	border-bottom: 1px solid #dddfe2;
+	font-size: 1px;
+    margin-bottom: 8px;
+    padding-bottom: 15px;
+    padding-left: 0
+}
+
+footer ul li {display: inline-block;margin-right: 10px;padding-top: 8px;font-size: 12px}
+
+footer ul li a {text-decoration: none;color: #365899;font-size: 13px}
+
+footer ul li:last-child {background-color: #f6f7f9;border: 1px solid #ced0d4;border-radius: 2px;font-size: 13px;padding: 3px 10px}
+
+footer ul li:hover {background-color: #E9EBEE}
+
+footer ul li:last-child a {color: #4b4f56}
+
+footer table.footer-links {
+	color: #365899;
+	font-size: 13px
+}
+
+footer table.footer-links tr td {
+	font-size: 13px;
+	padding-right: 7px;
+	line-height: 1.6
+}
+
+footer table.footer-links tr td:nth-child(13) span.dollar-icon {font-weight: bolder}
+
+footer span.copy-right {color: #777;font-size: 13px;margin: 3px;padding-bottom: 20px;position: relative;top: 7px;bottom: 3px}
+
+/* End Footer */
+
+
+/* My FrameWork */
+
+.container {
+	width: 1000px;
+	height: 100%;
+	padding-right: 15px;
+  	padding-left: 15px;
+	margin-right: auto;
+  	margin-left: auto;
+}
+
+.row {margin-right: -15px;margin-left: -15px;position: relative}
+
+.font {font-family: sans-serif}
+
+.fl-right {float: right;}
